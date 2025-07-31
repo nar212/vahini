@@ -1,15 +1,16 @@
 pipeline {
     agent any
+
     stages {
-        stage ["code"]{
+        stage('Code') {
             steps {
-                echo "my name is vahini"
+                echo 'My name is Vahini'
             }
         }
-        stages ["Build"]{
+stage('Build') {
             steps {
-                echo "i am devops engineer"
+                echo 'I am DevOps Engineer'
             }
-        }  
+        }
     }
 }
